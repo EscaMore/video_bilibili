@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>本地媒体展示</title>
+    <style>
+        /* 基础样式 */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .media-item {
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        img, video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+
+        <!-- 视频展示 -->
+        <div class="media-item">
+            <h2>本地视频展示</h2>
+            <!-- 替换为你的本地视频路径 -->
+<video controls width="1000" >
+                <source src="video1.mp4" type="video/mp4">
+                您的浏览器不支持视频播放
+            </video>
+
+
+<!-- 图片展示 -->
+        <div class="media-item">
+            <h2>本地图片展示</h2>
+            <!-- 替换为你的本地图片路径 -->
+            <img src="video1.png" alt="示例图片" 
+                 title="点击查看大图"
+                 onclick="window.open(this.src)">
+
+        </div>
+        </div>
+    </div>
+</body>
+</html>
